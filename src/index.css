@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #22254b;
+  color: white;
+  font-family: "Poppins", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    background-color: #373b69;
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+form{
+  background: #4e5496;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.input-search{
+  height: 3rem;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  font-size: 17px;
+  background: #373b69;
+  color: white;
+  border: 5px solid whitesmoke;
+}
+
+.input-search:active{
+  border: 0;
+}
+
+.input-search:focus{
+  outline: 0;
+  border: 1px solid green;
+}
+
+.movie-rack{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.movie-card{
+  background-color: #373b69;
+  border-radius: 3px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  position: relative;
+  margin: 1rem;
+  width: 300px;
+}
+
+.movie-card img{
+  width: 100%;
+}
+
+.info{
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 0.5px;
+}
+.info h2{
+  margin: 0;
+}
+.info h3{
+  background-color: #22254b;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+}
+
+.green {
+  color: green;
+}
+.red{
+  color: red;
+}
+
+.overview{
+  background: #fff;
+  padding: 2rem;
+  position: absolute;
+  max-height: 100%;
+  overflow: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in-out;
+  color: black;
+}
+
+.overview h3{
+  margin-top: 0;
+}
+
+.movie-card:hover .overview {
+  transform: translateY(0);
+}
